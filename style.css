@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color:black;
+    background-color:black;
+  }
+  
+  img {
+    max-width: 100%;
+    padding: 20px;
+  }
+  
+  h1,
+  h2,
+  h5 {
+    margin-bottom: 15px;
+  }
+  h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  ul {
+    list-style-type: none;
+  }
+  h2{
+    font-family:'Times New Roman', Times, serif;
+  }
+  .box1 h2:hover {
+    color:orangered;
+  }
+  
+.box1:hover {
+      transform: scale(1.1);
+      background:rgb(176, 214, 139);
+      z-index: 2;
+      box-shadow: 3px 3px 3px #000;
+      
+}
+
+  .container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:600px;
+    background-color: black;
+    color: white;
+  }
+  .italic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .para,
+  .para1{
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  .tech{
+    color: gray;
+    font-weight: bold;
+    
+  }
+  .wiki{
+    color:skyblue;
+    font-weight: bold;
+  }
+  
+  .navbar {
+    background: black;
+    color: #fff;
+    height: 60px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    color: orange;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .navbar ul {
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-left: 20px;
+  }
+  
+  .header {
+    background-color: white;
+    color: black;
+    min-height: 400px;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .header img {
+    max-width: 400px;
+  }
+  
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .buttons{
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+  }
+  .btn{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background:black;
+    color: #fff;
+    margin: 10px 10px;
+  }
+  .text-center{
+    height: 200px;
+    color: aliceblue;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+   
+  }
+  .blockquote p{
+    align-items: center;
+    font-size: 25px;
+  }
+  
+  .hr-text{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 100px;
+  }
+  h3 {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    padding: 50px;
+}
+  
+h3:before,
+h3:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid rgba(151, 148, 148, 0.877);
+    margin:auto;
+    width: 10px;
+}
+  
+  
+  .boxes {
+   display: flex;
+  }
+  .container2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+  }
+  
+  .box {
+    flex: 1;
+    background:black;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 25px 20px;
+  }
+  .boxes1{
+    display: flex;
+    justify-content:center;
+  }
+  .container3 {
+    display: flex;
+    justify-content:space-between;
+    background-color:white;
+    
+  }
+  .box1 {
+    flex: 1;
+    background:white;
+    color:black;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 25px 20px;
+    
+    
+  }
+  
+
+
+  @media (max-width: 768px) {
+    .header .container {
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: center;
+    }
+  
+    .boxes .container2 {
+      display: block;
+      text-align: center;
+    }
+    .text-center .blockquote{
+      display: block;
+      text-align: center;
+    }
+    .boxes1 .container3 {
+      display: block;
+      text-align: center;
+    }
+    
+  }
+  
